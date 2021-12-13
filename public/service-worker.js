@@ -39,7 +39,6 @@ self.addEventListener("activate", function (evt) {
   self.clients.claim();
 });
 
-// fetch
 self.addEventListener("fetch", function (evt) {
   // cache successful requests to the API
   if (evt.request.url.includes("/api/")) {
